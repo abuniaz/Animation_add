@@ -8,9 +8,10 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
-  double _height = 55;
-  double _width = 55;
-  Color _color = Colors.green;
+  final double _height = 55;
+  final double _width = 55;
+  final Color _color = Colors.green;
+  bool selected = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +21,19 @@ class _HomepageState extends State<Homepage> {
         height: _height,
         width: _width,
         decoration: BoxDecoration(
-            color: _color, borderRadius: BorderRadius.circular(30)),
+          color: _color,
+          borderRadius: BorderRadius.circular(30),
+        ),
+        curve: Curves.fastOutSlowIn,
+        child: GestureDetector(
+          onTap: () {
+            setState(() {
+              selected = !selected;
+
+              Colors.teal;
+            });
+          },
+        ),
       ),
     );
   }
