@@ -9,7 +9,7 @@ class Homepage extends StatefulWidget {
 
 class _HomepageState extends State<Homepage> {
   final double _height = 55;
-  final double _width = 55;
+  double _width = 55;
   final Color _color = Colors.green;
   bool selected = false;
   @override
@@ -29,8 +29,8 @@ class _HomepageState extends State<Homepage> {
           onTap: () {
             setState(() {
               selected = !selected;
-
               Colors.teal;
+              _width = 200;
             });
           },
         ),
