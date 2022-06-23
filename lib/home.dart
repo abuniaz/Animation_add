@@ -39,6 +39,26 @@ class _HomepageState extends State<Homepage> {
                 },
               ),
             ),
+            AnimatedContainer(
+              duration: const Duration(seconds: 1),
+              height: _height,
+              width: _width,
+              decoration: BoxDecoration(
+                color: _color,
+                borderRadius: BorderRadius.circular(30),
+              ),
+              curve: Curves.fastOutSlowIn,
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    selected = !selected;
+                    _color = Colors.teal;
+                    _width = 200;
+                    _height = 200;
+                  });
+                },
+              ),
+            ),
           ],
         ),
       ),
