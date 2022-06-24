@@ -41,6 +41,15 @@ class _HomepageState extends State<Homepage> {
                     _height = 200;
                   });
                 },
+                child: const Center(
+                    child: Text(
+                  'HI This is left side',
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      fontStyle: FontStyle.italic),
+                )),
               ),
             ),
             AnimatedContainer(
@@ -61,6 +70,13 @@ class _HomepageState extends State<Homepage> {
                     _height = 200;
                   });
                 },
+                child: const Center(
+                    child: Text('HI This is left side',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            fontStyle: FontStyle.italic))),
               ),
             ),
           ],
