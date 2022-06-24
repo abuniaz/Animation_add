@@ -12,6 +12,7 @@ class _HomepageState extends State<Homepage> {
   double _width = 55;
   Color _color = Colors.green;
   bool selected = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,6 +83,11 @@ class _HomepageState extends State<Homepage> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+          elevation: 8,
+          child: Row(children: [
+            IconButton(onPressed: () {}, icon: const Icon(Icons.home))
+          ])),
     );
   }
 }
