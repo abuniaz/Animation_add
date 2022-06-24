@@ -15,9 +15,13 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text('AnimationContainer'),
+        backgroundColor: Colors.teal,
+      ),
       body: Center(
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             AnimatedContainer(
               duration: const Duration(seconds: 1),
