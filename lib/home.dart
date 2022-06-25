@@ -43,14 +43,15 @@ class _HomepageState extends State<Homepage> {
                   });
                 },
                 child: const Center(
-                    child: Text(
-                  'HI This is left side',
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontStyle: FontStyle.italic),
-                ),),
+                  child: Text(
+                    'HI This is left side',
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontStyle: FontStyle.italic),
+                  ),
+                ),
               ),
             ),
             AnimatedContainer(
@@ -72,22 +73,31 @@ class _HomepageState extends State<Homepage> {
                   });
                 },
                 child: const Center(
-                    child: Text('HI This is left side',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                            fontStyle: FontStyle.italic),),),
+                  child: Text(
+                    'HI This is left side',
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontStyle: FontStyle.italic),
+                  ),
+                ),
               ),
             ),
           ],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-          elevation: 8,
-          child: Row(children: [
-            IconButton(onPressed: () {}, icon: const Icon(Icons.home))
-          ])),
+        elevation: 8,
+        child: Row(
+          children: [
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.home),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
