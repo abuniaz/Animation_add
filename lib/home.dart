@@ -50,7 +50,7 @@ class _HomepageState extends State<Homepage> {
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                       fontStyle: FontStyle.italic),
-                )),
+                ),),
               ),
             ),
             AnimatedContainer(
@@ -77,7 +77,7 @@ class _HomepageState extends State<Homepage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
-                            fontStyle: FontStyle.italic))),
+                            fontStyle: FontStyle.italic),),),
               ),
             ),
           ],
